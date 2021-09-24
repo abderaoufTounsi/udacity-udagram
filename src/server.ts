@@ -46,7 +46,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
         await deleteLocalFiles([filteredpath]);
 
       } catch(error){
-        res.status(500).send('Error : could not process image');
+        res.status(422).send('Error : could not process image');
       }
   } );
   
